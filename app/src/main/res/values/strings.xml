@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Android-Common-UX</string>
+
+    <string name="menu_label_home">Home</string>
+    <string name="menu_label_favorite">Favorite</string>
+    <string name="menu_label_more">More</string>
 </resources>
