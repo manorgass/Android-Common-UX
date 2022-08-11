@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         initView()
+        showAdDialog()
     }
 
     private fun initView() {
@@ -37,6 +38,10 @@ class MainActivity : AppCompatActivity() {
             pager.initPager()
             bottomNavigationView.initBottomNavigation()
         }
+    }
+
+    private fun showAdDialog() {
+        AdDialogFragment.show(supportFragmentManager)
     }
 
     private fun ViewPager2.initPager() {
