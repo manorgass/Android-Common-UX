@@ -2,4 +2,6 @@
 <resources>
 
     <dimen name="ad_bottom_sheet_radius">20dp</dimen>
+
+    <dimen name="search_button_height">60dp</dimen>
 </resources>
