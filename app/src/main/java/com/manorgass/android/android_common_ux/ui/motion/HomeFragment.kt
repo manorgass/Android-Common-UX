@@ -1,4 +1,4 @@
-package com.manorgass.android.android_common_ux
+package com.manorgass.android.android_common_ux.ui.motion
 
 import android.os.Bundle
 import android.view.LayoutInflater

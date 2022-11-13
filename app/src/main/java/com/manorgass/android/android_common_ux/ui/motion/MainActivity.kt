@@ -1,4 +1,4 @@
-package com.manorgass.android.android_common_ux
+package com.manorgass.android.android_common_ux.ui.motion
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.manorgass.android.android_common_ux.R
 import com.manorgass.android.android_common_ux.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.manorgass.android.android_common_ux.data.Sample
 import com.manorgass.android.android_common_ux.databinding.ActivitySelectSampleBinding
+import com.manorgass.android.android_common_ux.ui.motion.MainActivity
 
 class SelectSampleActivity : AppCompatActivity() {
 

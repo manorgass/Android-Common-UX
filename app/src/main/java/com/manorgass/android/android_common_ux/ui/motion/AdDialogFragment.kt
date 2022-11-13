@@ -1,4 +1,4 @@
-package com.manorgass.android.android_common_ux
+package com.manorgass.android.android_common_ux.ui.motion
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,6 +10,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.manorgass.android.android_common_ux.R
 import com.manorgass.android.android_common_ux.databinding.DialogAdBinding
 
 class AdDialogFragment(
