@@ -29,4 +29,7 @@
     <string name="sample_motion_layout_title">Motion Layout</string>
     <string name="sample_motion_layout_description">Motion Layout 기반으로 구현된 일반적인 서비스 앱의 UX 샘플</string>
 
+    <string name="sample_coordinator_layout_title">Coordinator Layout</string>
+    <string name="sample_coordinator_layout_description">Coordinator Layout 기반으로 구현된 일반적인 서비스 앱의 UX 샘플.</string>
+
 </resources>

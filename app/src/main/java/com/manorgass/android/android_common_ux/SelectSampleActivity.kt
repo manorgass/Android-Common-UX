@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.manorgass.android.android_common_ux.data.Sample
 import com.manorgass.android.android_common_ux.databinding.ActivitySelectSampleBinding
+import com.manorgass.android.android_common_ux.ui.coordinatorlayout.CoordinatorLayoutActivity
 import com.manorgass.android.android_common_ux.ui.motion.MotionLayoutActivity
 
 class SelectSampleActivity : AppCompatActivity() {
@@ -13,10 +14,8 @@ class SelectSampleActivity : AppCompatActivity() {
 
     private val sampleItemClickCallback: (Sample) -> Unit = {
         when (it) {
-            Sample.MOTION_LAYOUT -> Intent(
-                this,
-                MotionLayoutActivity::class.java
-            ).also { startActivity(it) }
+            Sample.MOTION_LAYOUT -> startActivity(MotionLayoutActivity::class.java)
+            Sample.COORDINATOR_LAYOUT -> startActivity(CoordinatorLayoutActivity::class.java)
         }
     }
 
@@ -25,5 +24,9 @@ class SelectSampleActivity : AppCompatActivity() {
         binding = ActivitySelectSampleBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.sampleList.adapter = SampleAdapter(sampleItemClickCallback)
+    }
+
+    private fun startActivity(activity: Class<*>) {
+        Intent(this, activity).also { startActivity(it) }
     }
 }

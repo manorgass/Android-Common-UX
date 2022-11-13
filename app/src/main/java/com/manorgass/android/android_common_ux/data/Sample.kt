@@ -7,5 +7,11 @@ enum class Sample(
     @StringRes val titleResId: Int,
     @StringRes val descriptionResId: Int
 ) {
-    MOTION_LAYOUT(R.string.sample_motion_layout_title, R.string.sample_motion_layout_description)
+    MOTION_LAYOUT(R.string.sample_motion_layout_title, R.string.sample_motion_layout_description),
+
+    COORDINATOR_LAYOUT(
+        R.string.sample_coordinator_layout_title,
+        R.string.sample_coordinator_layout_description
+    )
+
 }

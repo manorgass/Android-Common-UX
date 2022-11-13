@@ -27,7 +27,6 @@ class MotionLayoutActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.hide()
         binding = ActivityMotionLayoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

@@ -29,6 +29,10 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".ui.coordinatorlayout.CoordinatorLayoutActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
