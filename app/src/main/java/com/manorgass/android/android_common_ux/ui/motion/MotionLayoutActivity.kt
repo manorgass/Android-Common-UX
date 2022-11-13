@@ -8,10 +8,10 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.manorgass.android.android_common_ux.R
-import com.manorgass.android.android_common_ux.databinding.ActivityMainBinding
+import com.manorgass.android.android_common_ux.databinding.ActivityMotionLayoutBinding
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+class MotionLayoutActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMotionLayoutBinding
 
     private val fragmentBank = listOf(
         HomeFragment(),
@@ -27,7 +27,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        supportActionBar?.hide()
+        binding = ActivityMotionLayoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         initView()
@@ -46,7 +47,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun ViewPager2.initPager() {
-        adapter = PagerAdapter(this@MainActivity)
+        adapter = PagerAdapter(this@MotionLayoutActivity)
         registerOnPageChangeCallback(PageChangeCallbackExt())
     }
 
