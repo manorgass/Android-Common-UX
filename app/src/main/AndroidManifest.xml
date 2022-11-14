@@ -33,6 +33,10 @@
             android:name=".ui.coordinatorlayout.CoordinatorLayoutActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".ui.bottomsheet.BottomSheetActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

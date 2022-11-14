@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.manorgass.android.android_common_ux.data.Sample
 import com.manorgass.android.android_common_ux.databinding.ActivitySelectSampleBinding
+import com.manorgass.android.android_common_ux.ui.bottomsheet.BottomSheetActivity
 import com.manorgass.android.android_common_ux.ui.coordinatorlayout.CoordinatorLayoutActivity
 import com.manorgass.android.android_common_ux.ui.motion.MotionLayoutActivity
 
@@ -16,6 +17,7 @@ class SelectSampleActivity : AppCompatActivity() {
         when (it) {
             Sample.MOTION_LAYOUT -> startActivity(MotionLayoutActivity::class.java)
             Sample.COORDINATOR_LAYOUT -> startActivity(CoordinatorLayoutActivity::class.java)
+            Sample.BOTTOM_SHEET -> startActivity(BottomSheetActivity::class.java)
         }
     }
 

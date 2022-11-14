@@ -12,6 +12,10 @@ enum class Sample(
     COORDINATOR_LAYOUT(
         R.string.sample_coordinator_layout_title,
         R.string.sample_coordinator_layout_description
-    )
+    ),
 
+    BOTTOM_SHEET(
+        R.string.sample_bottom_sheet_title,
+        R.string.sample_bottom_sheet_description
+    )
 }
